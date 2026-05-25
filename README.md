@@ -1,11 +1,6 @@
 # GDV Gravity: Geometric Drift Vector Framework
 
-A modified teleparallel gravity framework based on the torsion-vector invariant
-
-\[
-T + \beta T_\mu T^\mu
-\]
-
+A modified teleparallel gravity framework based on the torsion-vector invariant.
 This repository contains the core derivations, field equations, and analytical results of the GDV (Geometric Drift Vector) framework, where gravity is interpreted through a torsional drift structure of spacetime rather than curvature alone.
 
 ---
@@ -31,7 +26,7 @@ This repository contains the core derivations, field equations, and analytical r
 - `gdv_torsion_invariants.py` — Computation of torsion invariants and geometric scalars
 - `gdv_lorentz_covariance.py` — Local Lorentz covariance and tetrad consistency analysis
 - `gdv_diffeomorphism_gauge_test.py` — Diffeomorphism and gauge consistency tests of the torsion scalar
-
+- Appendices
 ---
 
 ## Key Results
@@ -43,12 +38,7 @@ The framework reproduces:
 - Schwarzschild geometry in Painlevé–Gullstrand form
 - MOND-like large-scale dynamics without phenomenological interpolation functions
 
-while introducing a nontrivial torsional drift sector through the invariant
-
-\[
-T_\mu T^\mu
-\]
-
+while introducing a nontrivial torsional drift sector through the invariant. 
 ---
 
 ## Status
