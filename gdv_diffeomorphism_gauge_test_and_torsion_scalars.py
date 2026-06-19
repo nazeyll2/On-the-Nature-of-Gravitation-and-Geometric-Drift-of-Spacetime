@@ -182,12 +182,3 @@ sp.pprint(radial_div)
 print("\nT =")
 sp.pprint(Tradial)
 
-print("\nConclusion:\n")
-
-print("For W_i = b(t,x,y,z) x_i, the integrability obstruction is:")
-print("partial_i W_j - partial_j W_i = x_j partial_i b - x_i partial_j b.")
-print("The code explicitly computes these three components above.")
-print("For generic b(t,x,y,z), these expressions are not zero.")
-print("Therefore the metric cross terms g_0i cannot be removed in general.")
-print("Moreover, the torsion scalar depends explicitly on b and its spatial derivatives.")
-print("Hence W_i = b x_i is not pure diffeomorphism gauge.")
