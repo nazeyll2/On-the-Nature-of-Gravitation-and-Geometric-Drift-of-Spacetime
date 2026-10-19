@@ -529,5 +529,24 @@ u_up=sp.zeros(1,4)
 u_up[0]=1
 u_up[1]=-b*r/a
 
-ThetaSon_a_ust_nu=sp.simplify((rho + p )* g *e_inv*u_up.T * u_up + p * g * e_inv * g_inv)
-RHS_a_nu = (kappa/2)*ThetaSon_a_ust_nu
+u_col = sp.Matrix([
+    1,
+    -r*b/a,
+    0,
+    0
+])
+
+u_cov = g * u_col
+
+Theta_mixed = sp.simplify(
+    (rho + p) * u_cov * u_col.T
+    + p * sp.eye(4)
+)
+
+Theta_a_nu = sp.simplify(
+    e_inv.T * Theta_mixed
+)
+
+RHS_a_nu = sp.simplify(
+    (kappa / 2) * Theta_a_nu
+)
